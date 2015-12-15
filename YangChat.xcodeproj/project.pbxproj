@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A0CA84D61C2034C600FBF379 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CA84D51C2034C600FBF379 /* main.m */; };
+		A0CA84D91C2034C600FBF379 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CA84D81C2034C600FBF379 /* AppDelegate.m */; };
+		A0CA84DC1C2034C600FBF379 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CA84DB1C2034C600FBF379 /* ViewController.m */; };
+		A0CA84DF1C2034C600FBF379 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0CA84DD1C2034C600FBF379 /* Main.storyboard */; };
+		A0CA84E11C2034C600FBF379 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0CA84E01C2034C600FBF379 /* Images.xcassets */; };
+		A0CA84E41C2034C600FBF379 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0CA84E21C2034C600FBF379 /* LaunchScreen.xib */; };
+		A0CA84F01C2034C600FBF379 /* YangChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CA84EF1C2034C600FBF379 /* YangChatTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A0CA84EA1C2034C600FBF379 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0CA84C81C2034C600FBF379 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0CA84CF1C2034C600FBF379;
+			remoteInfo = YangChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A0CA84D01C2034C600FBF379 /* YangChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YangChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0CA84D41C2034C600FBF379 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0CA84D51C2034C600FBF379 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A0CA84D71C2034C600FBF379 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A0CA84D81C2034C600FBF379 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A0CA84DA1C2034C600FBF379 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A0CA84DB1C2034C600FBF379 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A0CA84DE1C2034C600FBF379 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A0CA84E01C2034C600FBF379 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A0CA84E31C2034C600FBF379 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A0CA84E91C2034C600FBF379 /* YangChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YangChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0CA84EE1C2034C600FBF379 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0CA84EF1C2034C600FBF379 /* YangChatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YangChatTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0CA84CD1C2034C600FBF379 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0CA84E61C2034C600FBF379 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A0CA84C71C2034C600FBF379 = {
+			isa = PBXGroup;
+			children = (
+				A0CA84D21C2034C600FBF379 /* YangChat */,
+				A0CA84EC1C2034C600FBF379 /* YangChatTests */,
+				A0CA84D11C2034C600FBF379 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A0CA84D11C2034C600FBF379 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0CA84D01C2034C600FBF379 /* YangChat.app */,
+				A0CA84E91C2034C600FBF379 /* YangChatTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A0CA84D21C2034C600FBF379 /* YangChat */ = {
+			isa = PBXGroup;
+			children = (
+				A0CA84D71C2034C600FBF379 /* AppDelegate.h */,
+				A0CA84D81C2034C600FBF379 /* AppDelegate.m */,
+				A0CA84DA1C2034C600FBF379 /* ViewController.h */,
+				A0CA84DB1C2034C600FBF379 /* ViewController.m */,
+				A0CA84DD1C2034C600FBF379 /* Main.storyboard */,
+				A0CA84E01C2034C600FBF379 /* Images.xcassets */,
+				A0CA84E21C2034C600FBF379 /* LaunchScreen.xib */,
+				A0CA84D31C2034C600FBF379 /* Supporting Files */,
+			);
+			path = YangChat;
+			sourceTree = "<group>";
+		};
+		A0CA84D31C2034C600FBF379 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A0CA84D41C2034C600FBF379 /* Info.plist */,
+				A0CA84D51C2034C600FBF379 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A0CA84EC1C2034C600FBF379 /* YangChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				A0CA84EF1C2034C600FBF379 /* YangChatTests.m */,
+				A0CA84ED1C2034C600FBF379 /* Supporting Files */,
+			);
+			path = YangChatTests;
+			sourceTree = "<group>";
+		};
+		A0CA84ED1C2034C600FBF379 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A0CA84EE1C2034C600FBF379 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A0CA84CF1C2034C600FBF379 /* YangChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0CA84F31C2034C600FBF379 /* Build configuration list for PBXNativeTarget "YangChat" */;
+			buildPhases = (
+				A0CA84CC1C2034C600FBF379 /* Sources */,
+				A0CA84CD1C2034C600FBF379 /* Frameworks */,
+				A0CA84CE1C2034C600FBF379 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YangChat;
+			productName = YangChat;
+			productReference = A0CA84D01C2034C600FBF379 /* YangChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A0CA84E81C2034C600FBF379 /* YangChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0CA84F61C2034C600FBF379 /* Build configuration list for PBXNativeTarget "YangChatTests" */;
+			buildPhases = (
+				A0CA84E51C2034C600FBF379 /* Sources */,
+				A0CA84E61C2034C600FBF379 /* Frameworks */,
+				A0CA84E71C2034C600FBF379 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0CA84EB1C2034C600FBF379 /* PBXTargetDependency */,
+			);
+			name = YangChatTests;
+			productName = YangChatTests;
+			productReference = A0CA84E91C2034C600FBF379 /* YangChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0CA84C81C2034C600FBF379 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = Jolie;
+				TargetAttributes = {
+					A0CA84CF1C2034C600FBF379 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					A0CA84E81C2034C600FBF379 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = A0CA84CF1C2034C600FBF379;
+					};
+				};
+			};
+			buildConfigurationList = A0CA84CB1C2034C600FBF379 /* Build configuration list for PBXProject "YangChat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A0CA84C71C2034C600FBF379;
+			productRefGroup = A0CA84D11C2034C600FBF379 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A0CA84CF1C2034C600FBF379 /* YangChat */,
+				A0CA84E81C2034C600FBF379 /* YangChatTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A0CA84CE1C2034C600FBF379 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0CA84DF1C2034C600FBF379 /* Main.storyboard in Resources */,
+				A0CA84E41C2034C600FBF379 /* LaunchScreen.xib in Resources */,
+				A0CA84E11C2034C600FBF379 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0CA84E71C2034C600FBF379 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A0CA84CC1C2034C600FBF379 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0CA84DC1C2034C600FBF379 /* ViewController.m in Sources */,
+				A0CA84D91C2034C600FBF379 /* AppDelegate.m in Sources */,
+				A0CA84D61C2034C600FBF379 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0CA84E51C2034C600FBF379 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0CA84F01C2034C600FBF379 /* YangChatTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A0CA84EB1C2034C600FBF379 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0CA84CF1C2034C600FBF379 /* YangChat */;
+			targetProxy = A0CA84EA1C2034C600FBF379 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A0CA84DD1C2034C600FBF379 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0CA84DE1C2034C600FBF379 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A0CA84E21C2034C600FBF379 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0CA84E31C2034C600FBF379 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A0CA84F11C2034C600FBF379 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A0CA84F21C2034C600FBF379 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A0CA84F41C2034C600FBF379 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YangChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A0CA84F51C2034C600FBF379 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YangChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A0CA84F71C2034C600FBF379 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = YangChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YangChat.app/YangChat";
+			};
+			name = Debug;
+		};
+		A0CA84F81C2034C600FBF379 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = YangChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YangChat.app/YangChat";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A0CA84CB1C2034C600FBF379 /* Build configuration list for PBXProject "YangChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0CA84F11C2034C600FBF379 /* Debug */,
+				A0CA84F21C2034C600FBF379 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0CA84F31C2034C600FBF379 /* Build configuration list for PBXNativeTarget "YangChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0CA84F41C2034C600FBF379 /* Debug */,
+				A0CA84F51C2034C600FBF379 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A0CA84F61C2034C600FBF379 /* Build configuration list for PBXNativeTarget "YangChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0CA84F71C2034C600FBF379 /* Debug */,
+				A0CA84F81C2034C600FBF379 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A0CA84C81C2034C600FBF379 /* Project object */;
+}
