@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		A0CA84D61C2034C600FBF379 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CA84D51C2034C600FBF379 /* main.m */; };
 		A0CA84D91C2034C600FBF379 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CA84D81C2034C600FBF379 /* AppDelegate.m */; };
-		A0CA84DC1C2034C600FBF379 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CA84DB1C2034C600FBF379 /* ViewController.m */; };
 		A0CA84DF1C2034C600FBF379 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0CA84DD1C2034C600FBF379 /* Main.storyboard */; };
 		A0CA84E11C2034C600FBF379 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0CA84E01C2034C600FBF379 /* Images.xcassets */; };
 		A0CA84E41C2034C600FBF379 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0CA84E21C2034C600FBF379 /* LaunchScreen.xib */; };
 		A0CA84F01C2034C600FBF379 /* YangChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CA84EF1C2034C600FBF379 /* YangChatTests.m */; };
+		A0CA85061C2041EB00FBF379 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CA85041C2041EB00FBF379 /* LoginVC.m */; };
+		A0CA85071C2041EB00FBF379 /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0CA85051C2041EB00FBF379 /* LoginVC.xib */; };
+		A0CA850B1C20420000FBF379 /* MainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CA85091C20420000FBF379 /* MainVC.m */; };
+		A0CA850C1C20420000FBF379 /* MainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0CA850A1C20420000FBF379 /* MainVC.xib */; };
+		AB24EFF3491FF9CC66BC4A46 /* Pods_YangChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E46098D1D030FAA2A1843A9E /* Pods_YangChat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +36,21 @@
 		A0CA84D51C2034C600FBF379 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A0CA84D71C2034C600FBF379 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A0CA84D81C2034C600FBF379 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A0CA84DA1C2034C600FBF379 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A0CA84DB1C2034C600FBF379 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A0CA84DE1C2034C600FBF379 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A0CA84E01C2034C600FBF379 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A0CA84E31C2034C600FBF379 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A0CA84E91C2034C600FBF379 /* YangChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YangChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0CA84EE1C2034C600FBF379 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0CA84EF1C2034C600FBF379 /* YangChatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YangChatTests.m; sourceTree = "<group>"; };
+		A0CA85031C2041EB00FBF379 /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginVC.h; path = Controllers/Login/LoginVC.h; sourceTree = "<group>"; };
+		A0CA85041C2041EB00FBF379 /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginVC.m; path = Controllers/Login/LoginVC.m; sourceTree = "<group>"; };
+		A0CA85051C2041EB00FBF379 /* LoginVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginVC.xib; path = Controllers/Login/LoginVC.xib; sourceTree = "<group>"; };
+		A0CA85081C20420000FBF379 /* MainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainVC.h; path = Controllers/Main/MainVC.h; sourceTree = "<group>"; };
+		A0CA85091C20420000FBF379 /* MainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainVC.m; path = Controllers/Main/MainVC.m; sourceTree = "<group>"; };
+		A0CA850A1C20420000FBF379 /* MainVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainVC.xib; path = Controllers/Main/MainVC.xib; sourceTree = "<group>"; };
+		BF9AAF2557D8EDAF97067298 /* Pods-YangChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YangChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-YangChat/Pods-YangChat.release.xcconfig"; sourceTree = "<group>"; };
+		E1C37B7855229D679C8A9036 /* Pods-YangChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YangChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YangChat/Pods-YangChat.debug.xcconfig"; sourceTree = "<group>"; };
+		E46098D1D030FAA2A1843A9E /* Pods_YangChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YangChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB24EFF3491FF9CC66BC4A46 /* Pods_YangChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +72,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A0216952C5B14153E8DA7D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E46098D1D030FAA2A1843A9E /* Pods_YangChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A0CA84C71C2034C600FBF379 = {
 			isa = PBXGroup;
 			children = (
 				A0CA84D21C2034C600FBF379 /* YangChat */,
 				A0CA84EC1C2034C600FBF379 /* YangChatTests */,
 				A0CA84D11C2034C600FBF379 /* Products */,
+				BD2FF45057CBDFAE3553B245 /* Pods */,
+				6A0216952C5B14153E8DA7D8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,13 +103,18 @@
 		A0CA84D21C2034C600FBF379 /* YangChat */ = {
 			isa = PBXGroup;
 			children = (
-				A0CA84D71C2034C600FBF379 /* AppDelegate.h */,
-				A0CA84D81C2034C600FBF379 /* AppDelegate.m */,
-				A0CA84DA1C2034C600FBF379 /* ViewController.h */,
-				A0CA84DB1C2034C600FBF379 /* ViewController.m */,
+				A0CA84F91C203CBC00FBF379 /* Models */,
+				A0CA84FF1C203EB400FBF379 /* Controllers */,
+				A0CA84FE1C203D6D00FBF379 /* Thirds */,
+				A0CA84FC1C203D5000FBF379 /* General */,
+				A0CA84FB1C203D4500FBF379 /* Macro */,
+				A0CA84FD1C203D5C00FBF379 /* Helpers */,
+				A0CA85001C2040FB00FBF379 /* Network */,
 				A0CA84DD1C2034C600FBF379 /* Main.storyboard */,
 				A0CA84E01C2034C600FBF379 /* Images.xcassets */,
 				A0CA84E21C2034C600FBF379 /* LaunchScreen.xib */,
+				A0CA84D71C2034C600FBF379 /* AppDelegate.h */,
+				A0CA84D81C2034C600FBF379 /* AppDelegate.m */,
 				A0CA84D31C2034C600FBF379 /* Supporting Files */,
 			);
 			path = YangChat;
@@ -119,6 +146,86 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A0CA84F91C203CBC00FBF379 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		A0CA84FB1C203D4500FBF379 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Macro;
+			sourceTree = "<group>";
+		};
+		A0CA84FC1C203D5000FBF379 /* General */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = General;
+			sourceTree = "<group>";
+		};
+		A0CA84FD1C203D5C00FBF379 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		A0CA84FE1C203D6D00FBF379 /* Thirds */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Thirds;
+			sourceTree = "<group>";
+		};
+		A0CA84FF1C203EB400FBF379 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A0CA85021C2041A600FBF379 /* Main */,
+				A0CA85011C20419F00FBF379 /* Login */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A0CA85001C2040FB00FBF379 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		A0CA85011C20419F00FBF379 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A0CA85031C2041EB00FBF379 /* LoginVC.h */,
+				A0CA85041C2041EB00FBF379 /* LoginVC.m */,
+				A0CA85051C2041EB00FBF379 /* LoginVC.xib */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		A0CA85021C2041A600FBF379 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A0CA85081C20420000FBF379 /* MainVC.h */,
+				A0CA85091C20420000FBF379 /* MainVC.m */,
+				A0CA850A1C20420000FBF379 /* MainVC.xib */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		BD2FF45057CBDFAE3553B245 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E1C37B7855229D679C8A9036 /* Pods-YangChat.debug.xcconfig */,
+				BF9AAF2557D8EDAF97067298 /* Pods-YangChat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +233,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0CA84F31C2034C600FBF379 /* Build configuration list for PBXNativeTarget "YangChat" */;
 			buildPhases = (
+				3AB4781AFC2B952A97068580 /* Check Pods Manifest.lock */,
 				A0CA84CC1C2034C600FBF379 /* Sources */,
 				A0CA84CD1C2034C600FBF379 /* Frameworks */,
 				A0CA84CE1C2034C600FBF379 /* Resources */,
+				9ED1305ADBC821E28F62F29C /* Embed Pods Frameworks */,
+				7D23EF498BC56A7723A0C38B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,8 +309,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0CA850C1C20420000FBF379 /* MainVC.xib in Resources */,
 				A0CA84DF1C2034C600FBF379 /* Main.storyboard in Resources */,
 				A0CA84E41C2034C600FBF379 /* LaunchScreen.xib in Resources */,
+				A0CA85071C2041EB00FBF379 /* LoginVC.xib in Resources */,
 				A0CA84E11C2034C600FBF379 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,14 +326,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3AB4781AFC2B952A97068580 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7D23EF498BC56A7723A0C38B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YangChat/Pods-YangChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9ED1305ADBC821E28F62F29C /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YangChat/Pods-YangChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A0CA84CC1C2034C600FBF379 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0CA84DC1C2034C600FBF379 /* ViewController.m in Sources */,
 				A0CA84D91C2034C600FBF379 /* AppDelegate.m in Sources */,
+				A0CA850B1C20420000FBF379 /* MainVC.m in Sources */,
 				A0CA84D61C2034C600FBF379 /* main.m in Sources */,
+				A0CA85061C2041EB00FBF379 /* LoginVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,8 +506,10 @@
 		};
 		A0CA84F41C2034C600FBF379 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1C37B7855229D679C8A9036 /* Pods-YangChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = YangChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -355,8 +518,10 @@
 		};
 		A0CA84F51C2034C600FBF379 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF9AAF2557D8EDAF97067298 /* Pods-YangChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = YangChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -416,6 +581,7 @@
 				A0CA84F51C2034C600FBF379 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A0CA84F61C2034C600FBF379 /* Build configuration list for PBXNativeTarget "YangChatTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +590,7 @@
 				A0CA84F81C2034C600FBF379 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

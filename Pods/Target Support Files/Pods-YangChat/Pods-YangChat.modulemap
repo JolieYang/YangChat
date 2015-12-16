@@ -1,0 +1,6 @@
+framework module Pods_YangChat {
+  umbrella header "Pods-YangChat-umbrella.h"
+
+  export *
+  module * { export * }
+}
