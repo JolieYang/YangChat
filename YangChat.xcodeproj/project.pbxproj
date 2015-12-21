@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A02D034E1C26EF9100FD2D8B /* YCWebSocketOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A02D034D1C26EF9100FD2D8B /* YCWebSocketOperationManager.m */; };
+		A02D03511C26F2AB00FD2D8B /* BaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A02D03501C26F2AB00FD2D8B /* BaseRequest.m */; };
 		A0CA84D61C2034C600FBF379 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CA84D51C2034C600FBF379 /* main.m */; };
 		A0CA84D91C2034C600FBF379 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CA84D81C2034C600FBF379 /* AppDelegate.m */; };
 		A0CA84E11C2034C600FBF379 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0CA84E01C2034C600FBF379 /* Images.xcassets */; };
@@ -30,6 +32,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A02D034C1C26EF9100FD2D8B /* YCWebSocketOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YCWebSocketOperationManager.h; path = Network/YCWebSocketOperationManager.h; sourceTree = "<group>"; };
+		A02D034D1C26EF9100FD2D8B /* YCWebSocketOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YCWebSocketOperationManager.m; path = Network/YCWebSocketOperationManager.m; sourceTree = "<group>"; };
+		A02D034F1C26F2AB00FD2D8B /* BaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseRequest.h; path = Network/BaseRequest.h; sourceTree = "<group>"; };
+		A02D03501C26F2AB00FD2D8B /* BaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseRequest.m; path = Network/BaseRequest.m; sourceTree = "<group>"; };
+		A02D03531C28184800FD2D8B /* UtilsMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UtilsMacro.h; path = Macro/UtilsMacro.h; sourceTree = "<group>"; };
 		A0CA84D01C2034C600FBF379 /* YangChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YangChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0CA84D41C2034C600FBF379 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0CA84D51C2034C600FBF379 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -153,6 +160,7 @@
 		A0CA84FB1C203D4500FBF379 /* Macro */ = {
 			isa = PBXGroup;
 			children = (
+				A02D03531C28184800FD2D8B /* UtilsMacro.h */,
 			);
 			name = Macro;
 			sourceTree = "<group>";
@@ -190,6 +198,10 @@
 		A0CA85001C2040FB00FBF379 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				A02D034C1C26EF9100FD2D8B /* YCWebSocketOperationManager.h */,
+				A02D034D1C26EF9100FD2D8B /* YCWebSocketOperationManager.m */,
+				A02D034F1C26F2AB00FD2D8B /* BaseRequest.h */,
+				A02D03501C26F2AB00FD2D8B /* BaseRequest.m */,
 			);
 			name = Network;
 			sourceTree = "<group>";
@@ -377,7 +389,9 @@
 			files = (
 				A0CA84D91C2034C600FBF379 /* AppDelegate.m in Sources */,
 				A0CA850B1C20420000FBF379 /* MainVC.m in Sources */,
+				A02D034E1C26EF9100FD2D8B /* YCWebSocketOperationManager.m in Sources */,
 				A0CA84D61C2034C600FBF379 /* main.m in Sources */,
+				A02D03511C26F2AB00FD2D8B /* BaseRequest.m in Sources */,
 				A0CA85061C2041EB00FBF379 /* LoginVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
