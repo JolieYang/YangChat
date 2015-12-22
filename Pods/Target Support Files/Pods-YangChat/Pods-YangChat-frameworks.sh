@@ -87,9 +87,11 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-YangChat/Reachability.framework"
   install_framework "Pods-YangChat/SDWebImage.framework"
   install_framework "Pods-YangChat/SocketRocket.framework"
+  install_framework "Pods-YangChat/YYModel.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-YangChat/Reachability.framework"
   install_framework "Pods-YangChat/SDWebImage.framework"
   install_framework "Pods-YangChat/SocketRocket.framework"
+  install_framework "Pods-YangChat/YYModel.framework"
 fi

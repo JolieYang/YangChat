@@ -9,6 +9,7 @@
 #import "YCWebSocketOperationManager.h"
 #import "UtilsMacro.h"
 #import "SRWebSocket.h"
+#import <objc/runtime.h>
 #define SOCKET_URL @"ws://121.42.62.246:21941/chat"
 
 @interface YCWebSocketOperationManager()<SRWebSocketDelegate>
@@ -157,8 +158,71 @@
 }
 
 
-
-
+// 对象转字典
+- (NSDictionary *)dictionaryRepresentation {
+    unsigned int count = 0;
+    objc_property_t *properties = class_copyPropertyList([self class], &count);// 获取注册类的属性列表
+    NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithCapacity:count];
+    NSDictionary *keyValueMap = [self attributeMapDictionary];
     
+    for (int i = 0; i < count; i++) {
+        NSString *key = [NSString stringWithUTF8String:property_getName(properties[i])];
+        id value = [self valueForKey:key];
+        key = [keyValueMap objectForKey:key];
+        // only ad it to dictionary if it is not nil
+        if (key && value) {
+            [dict setObject:value forKey:key];
+        }
+    }
+    free(properties);
+    return dict;
+}
+
+- (NSDictionary *)attributeMapDictionary {
+    return nil;//  字典中键名与对象属性名一样
+}
+
+// 字典转对象
+- (id)initWithDict:(NSDictionary *)aDict {
+    self = [super init];
+    
+    if (self) {
+        [self setAttributesDictionary:aDict];
+    }
+    
+    return self;
+}
+
+// 建立映射关系
+- (void)setAttributesDictionary:(NSDictionary *)aDict {
+    // 获取映射字典
+    NSDictionary *mapDict = [self attributeMapDictionary];
+    
+    if (mapDict == nil) {// 默认映射字典
+        NSMutableDictionary *tmpDict = [NSMutableDictionary dictionaryWithCapacity:aDict.count];
+        for (NSString *key in aDict) {
+            [tmpDict setObject:key forKey:key];
+        }
+        mapDict = tmpDict;
+    }
+    
+    NSEnumerator *keyEnumerator = [mapDict keyEnumerator];// 遍历映射字典,获取所有的键值,objectEnumerator得到里面的对象
+    id attributeName = nil;
+    while (attributeName = [keyEnumerator nextObject]) {// 遍历输出键值
+        SEL setter = [self _getSetterWithAttributeName:attributeName];// 获得属性的setter
+        if ([self respondsToSelector:setter]) {// 判断自己是否有相应的方法或检查是否响应指定的消息
+            NSString *aDictKey = [mapDict objectForKey:attributeName]; // 获取mapDict的值，即获取传入字典的键
+            id aDictValue = [aDict objectForKey:aDictKey];// 获取传入字典的值, 即赋给属性的值
+            
+            [self performSelectorOnMainThread:setter withObject:aDictValue waitUntilDone:[NSThread isMainThread]];
+        }
+    }
+}
+- (SEL)_getSetterWithAttributeName: (NSString *)attributeName {
+    NSString *firstAlpha = [[attributeName substringToIndex:1] uppercaseString];
+    NSString *otherAlpha = [attributeName substringFromIndex:1];
+    NSString *setterMethodName = [NSString stringWithFormat:@"set%@%@:" , firstAlpha, otherAlpha];
+    return NSSelectorFromString(setterMethodName);
+}
 
 @end
