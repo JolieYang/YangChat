@@ -7,6 +7,8 @@
 //
 
 #import "BaseRequest.h"
+#import <Foundation/Foundation.h>
+#import "YYModel.h"
 
 @implementation BaseRequest
 
@@ -27,11 +29,12 @@
 
 @end
 
-@implementation clientInfo
-
-
-@end
 
 @implementation Login_request
+//+ (NSDictionary *)modelCustomPropertyMapper{
+//    return @{
+//             @"clientType" : @"client_info.clientType",
+//             }
+//}
 
 @end

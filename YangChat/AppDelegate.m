@@ -29,7 +29,12 @@
     loginRequest.obj = @"person";
     loginRequest.act = @"getPersonInfo";
     loginRequest.pid = @"o14458345331084730625";
+    loginRequest.client_info.clientType = @"app";
+    loginRequest.client_info.userId = @"o14458345331084730625";
+    loginRequest.clientType = @"iosapp";
     
+    NSString *loginString = [loginRequest yy_modelToJSONString];
+    NSLog(@"show login String %@", loginString);
     
     [[YCWebSocketOperationManager sharedManager] send:loginRequest success:^(NSDictionary *result, NSString *message) {
         NSLog(@"succeed");
