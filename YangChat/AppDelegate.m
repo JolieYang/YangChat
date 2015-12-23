@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "LoginVC.h"
 #import "MainVC.h"
+#import "YCWebSocketOperationManager.h"
+#import "BaseRequest.h"
 
 
 @interface AppDelegate ()
@@ -22,7 +24,19 @@
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen]bounds]];
     
-    [self jumpToLogin];
+//    [self jumpToLogin];
+    Login_request *loginRequest = [[Login_request alloc] init];
+    loginRequest.obj = @"person";
+    loginRequest.act = @"getPersonInfo";
+    loginRequest.pid = @"o14458345331084730625";
+    
+    
+    [[YCWebSocketOperationManager sharedManager] send:loginRequest success:^(NSDictionary *result, NSString *message) {
+        NSLog(@"succeed");
+        [self jumpToLogin];
+    } error:^(NSString *code, NSString *message) {
+        NSLog(@"error");
+    }];
     
     [self.window makeKeyAndVisible];
     return YES;

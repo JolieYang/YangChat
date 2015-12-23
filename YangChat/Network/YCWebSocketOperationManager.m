@@ -10,22 +10,27 @@
 #import "UtilsMacro.h"
 #import "SRWebSocket.h"
 #import <objc/runtime.h>
-#define SOCKET_URL @"ws://121.42.62.246:21941/chat"
+#import "YYModel.h"
+//#define SOCKET_URL @"ws://121.42.62.246:21941/chat"
+#define SOCKET_URL @"ws://121.40.16.113:51717/yjs"
 
 @interface YCWebSocketOperationManager()<SRWebSocketDelegate>
 
+@property (nonatomic, strong) NSMutableDictionary *successBlocks;
+@property (nonatomic, strong) NSMutableDictionary *errorBlocks;
 @end
 
 @implementation YCWebSocketOperationManager{
     SRWebSocket *_webSocket;
-    NSMutableDictionary *_successBlocks;
-    NSMutableDictionary *_errorBlocks;
+//    NSMutableDictionary *_successBlocks;
+//    NSMutableDictionary *_errorBlocks;
 }
 
 - (id)init {
     if ([super init]) {
         _successBlocks = [[NSMutableDictionary alloc] init];
         _errorBlocks = [[NSMutableDictionary alloc] init];
+        [self connectSocket];
     }
     
     return self;
@@ -41,6 +46,7 @@
 }
 
 - (void)connectSocket {
+    NSLog(@"begin connect");
     if (_webSocket == nil) {
         _webSocket = [[SRWebSocket alloc] initWithURL:[NSURL URLWithString:SOCKET_URL]];
         _webSocket.delegate = self;
@@ -68,21 +74,30 @@
 // SR_OPEN 状态为open 时才能发送数据
 - (void)send:(BaseRequest *)request success:(void (^)(NSDictionary * result,NSString *message))successBlock error:(void(^)(NSString *code, NSString *message))errorBlock {
     if (_webSocket.readyState == SR_OPEN) {
+        NSLog(@"send 3");
         if (successBlock) {
             [_successBlocks setObject:successBlock forKey:request.echo];
+            NSLog(@"send successBlock");
         }
         if (errorBlock) {
             [_errorBlocks setObject:errorBlock forKey:request.echo];
+            NSLog(@"send errorBlock");
         }
         
+        NSData *jsonData = [request yy_modelToJSONData];
+        NSString *reqString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+        NSLog(@"rose show reqString %@", reqString);
+        reqString = [[[reqString stringByReplacingOccurrencesOfString:@"\n" withString:@""]stringByReplacingOccurrencesOfString:@" " withString:@""]stringByAppendingString:@"\n"];
+        NSLog(@"rose show reqString %@", reqString);
+        [_webSocket send:reqString];
         
     }
     else if (_webSocket.readyState == SR_CONNECTING) {
         WS(weakSelf);
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            NSLog(@"1");
+            NSLog(@"send 1");
             [weakSelf send:request success:successBlock error:errorBlock];
-            NSLog(@"2");
+            NSLog(@"send 2");
             return;
         });
         return;
@@ -99,7 +114,7 @@
 
 #pragma --mark SRWebSocketDelegate
 - (void)webSocket:(SRWebSocket *)webSocket didReceiveMessage:(id)message {
-    NSLog(@"websocket didReceiveMessage--收到消息");
+    NSLog(@"websocket didReceiveMessage--收到消息 %@", message);
     NSRange range = [message rangeOfString:@"{"];
     if (range.length > 0 && range.location > 0) {
         message = [message substringFromIndex:range.location];

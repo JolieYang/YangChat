@@ -26,3 +26,12 @@
 }
 
 @end
+
+@implementation clientInfo
+
+
+@end
+
+@implementation Login_request
+
+@end

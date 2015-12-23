@@ -14,3 +14,21 @@
 @property (nonatomic, strong) NSString *echo;
 
 @end
+
+// 测试
+@interface clientInfo : NSObject
+
+@property (nonatomic, strong) NSString *clientType;
+@property (nonatomic, strong) NSString *userId;
+
+@end
+
+@interface Login_request : BaseRequest
+
+@property (nonatomic, strong) NSString *a;
+@property (nonatomic, strong) NSString *obj;
+@property (nonatomic, strong) NSString *act;
+@property (nonatomic, strong) NSString *pid;
+@property (nonatomic, strong) clientInfo *client_info;
+
+@end

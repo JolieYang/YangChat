@@ -534,6 +534,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: qiaoling yang (65QAVBJRY7)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -545,6 +546,7 @@
 				INFOPLIST_FILE = YangChatTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "092e398a-1347-4a51-8c44-716603921316";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YangChat.app/YangChat";
 			};
 			name = Debug;
@@ -553,6 +555,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Fujian EHealth Science & Technology Co.,Ltd. (K27QGJJCS9)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -560,6 +563,7 @@
 				INFOPLIST_FILE = YangChatTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2d28b155-25c1-49e5-8ac6-91ec54bc0684";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YangChat.app/YangChat";
 			};
 			name = Release;

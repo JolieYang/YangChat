@@ -17,7 +17,7 @@ typedef void (^ErrorBlock)(NSString *code, NSString *message);
 
 @property (nonatomic, strong)void (^receiveMessage)(NSDictionary *dict, NSString *message);
 
-//- (void)send:(BaseRequest *)request success:(SuccessBlock *)successBlock error:(void(^)(NSString *code, NSString *message))errorBlock;
+- (void)send:(BaseRequest *)request success:(void (^)(NSDictionary * result,NSString *message))successBlock error:(void(^)(NSString *code, NSString *message))errorBlock;
 
 
 
